@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev src/index.ts"
+    "start": "ts-node-dev --respawn --poll --inspect --exit-child src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/express": "^4.17.21",
     "express": "^4.18.3",
+    "express-async-errors": "^3.1.1",
     "express-validator": "^7.0.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.2"
