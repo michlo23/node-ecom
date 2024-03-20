@@ -42,7 +42,7 @@ router.post(
         id: user.id,
         email: user.email,
       },
-      'privateKey'
+      process.env.JWT_KEY!
     );
 
     //Store it in on session object
