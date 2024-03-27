@@ -32,14 +32,3 @@ app.all('*', async () => {
 app.use(errorHandler);
 
 export { app };
-
-/*
-FROM node:alpine
- 
-WORKDIR /app
-COPY package.json .
-RUN npm install --omit=dev
-COPY . .
- 
-CMD ["npm", "start"]
-*/
