@@ -26,6 +26,10 @@ For the past few years, I have been mainly coding in the backend and .Net, and w
 
 
 ## How To Use
+Requirements: 
+* Docker Desktop with Kubernetes (Ingress installed)
+* Skaffold
+* 
 TO FULFILL
 
 
