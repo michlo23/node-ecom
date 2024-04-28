@@ -2,7 +2,12 @@ import buildClient from '../api/build-client';
 
 const landingPage = ({ currentUser }) => {
   console.log(currentUser);
-  return <h1>Landing Page!!!</h1>;
+
+  return currentUser ? (
+    <h1>You are signed in {currentUser.email} </h1>
+  ) : (
+    <h1>Landing Page!!!</h1>
+  );
 };
 
 // method called before page will be rendered (server side rendering) UNLESS it was redirected from subpage...
